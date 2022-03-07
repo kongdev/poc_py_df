@@ -1,0 +1,11 @@
+version: "3"
+services:
+  datascience-notebook:
+      build: .
+      environment:
+        - JUPYTER_TOKEN=123456
+      volumes:
+        - ./src:/home/jovyan
+      ports:
+        - 8888:8888
+      container_name: py-container
