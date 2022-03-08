@@ -9,3 +9,4 @@ services:
       ports:
         - 8888:8888
       container_name: py-container
+      command: jupyter notebook --NotebookApp.iopub_data_rate_limit=10e10
